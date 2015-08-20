@@ -3,4 +3,12 @@
 
 ## 目录
 - SDK CoreKit
-
+	- 网络通信
+	- 数据库SQLite操作封装
+	- 缓存操作
+	- URL编解码
+	- BASE64 加解码
+	- MD5\SHA1\SHA224\SHA256\SHA384\SHA512 签名验证
+	- JSON操作
+	- 对象序列化
+	- 生成UUID ExtKit
