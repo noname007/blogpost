@@ -75,3 +75,5 @@ CoreServices.framework/
                 version.plist
         Current             -> A
 ```
+
+苹果官方并不建议开发者使用Umbrella framework来构建自己的程序。
