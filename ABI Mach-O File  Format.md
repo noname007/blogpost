@@ -27,4 +27,5 @@
 - 在完整连接后，最后一个segent会包含一些可修改的连接信息，包含这个符号表、字符串表位置等等，这部分信息会被动态加载器在连接时修改
 - 当使用Stabs这种调试格式时，符号表也会保存可供调试信息；当你使用DWARF时，调试信息会保存在与此文件关联的dSYM文件。
 
-> DWARF和STAB的关系，
+> DWARF和STAB的关系，想看IBM developerWorks中的文章[http://www.ibm.com/developerworks/cn/opensource/os-debugging/](http://www.ibm.com/developerworks/cn/opensource/os-debugging/)
+
