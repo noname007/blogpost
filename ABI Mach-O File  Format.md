@@ -29,3 +29,4 @@
 
 > DWARF和STAB的关系，想看IBM developerWorks中的文章[http://www.ibm.com/developerworks/cn/opensource/os-debugging/](http://www.ibm.com/developerworks/cn/opensource/os-debugging/)
 
+按照惯例，Segment的命名方式将会以两个下划线开始并配上全大写的字符，例如__TEXT,而Section的命名方式则是以两个下划线开始并配上全小写的字符，例如__text
