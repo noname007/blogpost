@@ -1,0 +1,15 @@
+# iOS 界面旋转
+
+在iOS 8之后，所有旋转相关的方法都已经被弃用。现在，旋转已经被认定为View Controller所控制的视图(根视图)大小的变化,因此我们开始使用```viewWillTranstionToSize：withTransitionCoordinator：```方法。 当用户界面方面变化时，UIKit会向window的root View Controller发出信息，与此同时view controller会按照视图树结构通知其子view controller。
+
+在iOS6和7中，app所支持的人机界面方向被定义在app的Info.plist文件中，一个view controller可以重写```supportedInterfaceOrientations```方法来限制所支持的方向。当然了系统只会向window的rootViewController 或者那些现实全屏内容的view controller发出这条消息。其中在window只展示部分内容的的VC并不会直接参与决定能否支持那些方向。对于那些可以全屏的VC，你可以通过重写某个全屏的VC中的```preferredInterfaceOrientainForPresentation```来决定它呈现的时候应该指向哪种方向。 当旋转发生时，以下的函数会被调用```willRotateToInterfaceOrientation:duration:```和```willAnimateRotationToInterfaceInterfaceOrientation:duration：```和```didRotateFromInterfaceOrientation:``` 当然了在位置和大小发生变动后，会触发viewWillLayoutSubviews方法来调整子视图。如果一个View Controller并不可见，那么这些旋转方法并不会调用，然而当视图显示时，```viewWillLayoutSubViews```方法还是会被调用的。
+在启动期内，应用应该会在纵向方向建立起界面，但是```application：didFinishLaunchingWithOptions```返回后，应用会在整个window显示前会使用viewcontroller的旋转方法.你可以使用```statusBarOrientation```方法来决定设备方向。
+
+
+
+在这里简单介绍下```viewWillTranstionToSizeWithTransitionCoordinator```这个函数，
+
+UIKit会在改变已经显示出来的controller的view时调用此方法。你可以重写此方法，并用它来完成其他跟大小变化相关的任务。例如，一个container的必须使用这个方法来重写其内置的子view controller中的特性，并且你可以使用coordinator这个对象来动态的表现你造成的所有改变。
+
+ 如果在你自定义的View Controller中重写此方法，请一定要记住调用super对应的方法，这样做的目的是为了使得UIKit可以正确的转发这些大小变化的相关信息，view controllers可以转发这些大小变化到他们的view和他们的子view controllers。
+
