@@ -31,6 +31,7 @@ MyFramework.framework/
                 Info.plist
         Current  -> A
 ```
+
 你可能会发现有两层软链接，为什么不直接一层软连接就好呢？原因额外的一层软连接可以在更新版本选择时，只需要更新Versions/Current这层的软连接，而不需要直接各个资源的链接。
 
 ---------
@@ -77,3 +78,4 @@ CoreServices.framework/
 ```
 
 苹果官方并不建议开发者使用Umbrella framework来构建自己的程序。
+

@@ -23,4 +23,6 @@ iOS所使用的编译器LLVM Clang在编译C/C++这种静态强类型语言时�
 @implementation FIX_CATEGORY_BUG##name @end
 #endif
 ```
+
 然后在你Category的实现文件中使用该宏命令就可以了，次宏命令的功能也很简单，实际上就是定义了一个空类，这样Category便会被静态库连接了
+

@@ -46,6 +46,7 @@ E/AndroidRuntime(4908):java.lang.SecurityException: Injecting to another applica
 Instrumentation m_Instrumentation = new Instrumentation;
 m_Instrumentation.sendKeyDownUpSync(KeyEvent.KEYCODE_B);
 ```
+
 至于点击事件，你可以使用
 
 ```
@@ -53,6 +54,7 @@ m_Instrumentation.sendPointerSync(MotionEvent.obtain(SystemClock.uptimeMillis(),
 m_Instrumentation.sendPointerSync(MotionEvent.obtain(SystemClock.uptimeMillis(),SystemClock.uptimeMillis(),MotionEvent.ACTION_DOWN,pozx,pozy,);
 
 ```
+
 这个的用法是不是觉得跟第一种类似，事实上他们在底层实现是一样的，只不过有的做了封装。其底层实现如下
 
 ```

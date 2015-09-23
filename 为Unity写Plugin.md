@@ -25,6 +25,7 @@ Unity3D提供了两种Plugin，分别是Managed plugins和Native plugins。
 来提高JNI使用效率。
 
 举个栗子
+
 ```
 AndroidJavaClass jc = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
 // jni.FindClass("com.unity3d.player.UnityPlayer");
@@ -41,9 +42,12 @@ Debug.Log(jo.Call<AndroidJavaObject>("getCacheDir").Call<string>("getCanonicalPa
 // jni.CallObjectMethod(objectID, methodID);
 // jni.GetStringUTFChars(javaString);
 ```
+
 注释的地方便是使用标准JNI接口的调用方法，而AndroidJavaClass和AndroidJavaObject则可以快捷使用的简洁方法来实现这些功能。
 
 ## 使用Unity Plugin的最佳实践
 - 尽可能少的使用这种技术，毕竟存在性能损耗
 - 如果使用JNI技术的话，建议使用using{}来保证其生命周期在using结束之后会被立即销毁
 否则你也不知道Mono的Garbage Collector会在什么时候销毁这种对象。
+
+
