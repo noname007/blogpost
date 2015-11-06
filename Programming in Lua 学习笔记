@@ -1,0 +1,61 @@
+# Programming in Lua 学习笔记
+
+1. Lua is case-sensitive
+2. A comment starts anywhere with a double hyphen(--) and runs until the end of line ； Comment block ：--[[ 和 --]]，to reactive this block code ，add a single hyphen to the first line ： ---[[
+3. Lua is a dynamically typed language. There are no type definitions in the languages ; each value carries its own type.There are eight basic types in lua: nil、number、string、userdata、function、thread and table
+4. ```load``` always compiles its chunks in the global environment
+5. You can get the length of a string using the prefix operator “#” (called the length operator) eg:
+
+``` 
+a= "hello"
+print(#a)                                    --> 5
+print(#"good\0bye")			-->8
+```
+
+6. 	LUA has no integer type.The fact is that any integer up to 2^53 (approximately 10^16) has an exact representation as a double-precision floating-point number. When you use a double to represent an integer.
+For instance,12.7-20+7.3 is not exactly zero when computed with doubles,because both 12.7 and 7.3 do not have an exact finite representation in binary.
+7. 	Most modern CPUs do floating-point arithmetic as fast as (or even faster than) integer arithmetic.
+8.  Table type implements associative arrays. tables re the main(in fact, the only )data structuring mechanism in lua.Tables in lua are neither values nor variables,they are objrects;Moreover , you do not have to declare a table in lua;You create tables by means of constructor expression , which in its simplest form is written as {}:
+
+```
+a= {}
+k = “x”
+a[k] = 10 
+a[20] = "great"
+```
+9.  In table ,you can assign nil to table field to delete it like globals , Lua stores global variables in ordinary tables .
+10.  A common mistake for beginners is to confuse a.x with a[x],the first form represents a["x"] , that is  , a table  indexed by the string "x" ,the second form is a table indexed by the value of variable x . see the difference:
+
+```
+a={}
+x= "y"
+a[x]=10
+print (a[x]) -- 10
+print (a.x)  -- nil
+print(a,y)   --10
+```
+
+11. We call such a list without holes a sequence.For sequences, lua offers the length operator "#". It returns the last index,or the length , of the sequence. 
+12. When comparing values with different types, you must be careful ,remember that "0 " is different from 0;Moreover ,2 < 15 is obviously true.but "2" < "15" is false 
+13. Both and and or use short -cut evaluation ，that is ，they evaluate their second operand only when necessary.                       
+14. Control structures <br>if then else  // repeat until  //
+15. following a struct in outside :
+
+```
+while some_condition do 
+	::redo::
+	if some_other_condition then goto continue
+	else if yet_another_condition then goto redo
+	end
+	<some code>
+	::continue::
+``` 
+a useful detail in the specification of Lua is that the scope of a local variable ends on the last non-void statement of the block where the variable is defined. labels are considered void statements
+
+```
+while some_condition do 
+	if some_other_condition then goto continue end
+	local var = something
+	<some code>
+	::continue::
+```
