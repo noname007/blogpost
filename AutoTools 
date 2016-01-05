@@ -1,0 +1,35 @@
+# AutoTools 
+1. GNU Build System 
+	1. Automake
+	2. Gnulib
+	3. Libtool
+	4. Pointers 
+2. Making Configure Scripts configure creates several files:  
+	- one or more makefile 
+	- optionally, C header file ,the name of which is configurable ,containing # define directives
+	- config.log containing any messages produced by compilers, to help debugging if configure makes a mistake.
+3. you can inclue comments in configure,ac files by starting them with #
+4. standard “configure.ac” layout
+	- Every "configure.ac" ,ust contain a call to AC_INIT before the checks , and a call to AC_OUTPUT at the end.
+
+	```
+	Autoconf requirements
+	AC_INIT(package, version, bug-report-address)
+	information on the package
+	checks for programs
+	checks for libraries
+	checks for header files
+	checks for types
+	checks for structures
+	checks for compiler characteristics
+	checks for library functions
+	checks for system services
+	AC_CONFIG_FILES([file...])
+	AC_OUTPUT
+	```
+	
+5.  when using autoscan to create a "configure.ac" , you should manually exammine "configure.scan" before renaming it to "configure.ac" ,it probably needs some adjustments.
+6. Variable assignments may take place at any point in the makefile, however you should be aware that make reads each makefile twice. The first pass gathers vatiables and rules into tables, and the second pass resolves dependencies defined by the rules .So regardless of where you put your variable definitions, make will act as though they'd all been declared at the top, in the order you specified them throughout the makefile.
+7. A leading DASH character tells make to not care about the status code of the associated command.
+8. Autoconf generates sed or awk expressions into the resulting configure script , which then copies them into the config.status script.The config.status script uses these tools to the perform this simple string replacement.
+9. 
