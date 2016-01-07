@@ -32,4 +32,4 @@
 6. Variable assignments may take place at any point in the makefile, however you should be aware that make reads each makefile twice. The first pass gathers vatiables and rules into tables, and the second pass resolves dependencies defined by the rules .So regardless of where you put your variable definitions, make will act as though they'd all been declared at the top, in the order you specified them throughout the makefile.
 7. A leading DASH character tells make to not care about the status code of the associated command.
 8. Autoconf generates sed or awk expressions into the resulting configure script , which then copies them into the config.status script.The config.status script uses these tools to the perform this simple string replacement.
-9. 
+ 
