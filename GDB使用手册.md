@@ -35,3 +35,7 @@ List all the filename extensions and the associated languages.
 	* d - Goes down a level in the stack
 	* q - Quits gdb
 
+	
+	### 注意：
+	gdb 与strace等会存在冲突
+
