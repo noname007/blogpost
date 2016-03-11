@@ -22,5 +22,7 @@
 	- compiles refuse  generate  change reference with different value and const variable
 - Explicitly disallow the use of compiler-generated functions you do not want
 	- declarae not define   && the easier way private inherit 
-- 
+- Declare destructors virtual in polymorphic base classes
+	- If a class does not contain virtual functions, that often indicates it is not meant to be used as a base class. When a class is not intended to be a base class, making the destructor virtual is usually a bad idea.
+	- 
 
