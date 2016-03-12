@@ -26,4 +26,4 @@
 	- If a class does not contain virtual functions, that often indicates it is not meant to be used as a base class. When a class is not intended to be a base class, making the destructor virtual is usually a bad idea.
 	- Polymorphic base classes should declare virtual destructors. If a class has any virtual functions, it should have a virtual destructor.
 	- Classes not designed to be base classes or not designed to be used polymorphically should not declare virtual destructors.
-
+- Prevent Exceptions from leaving destructors
