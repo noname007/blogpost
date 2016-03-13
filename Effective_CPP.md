@@ -27,3 +27,6 @@
 	- Polymorphic base classes should declare virtual destructors. If a class has any virtual functions, it should have a virtual destructor.
 	- Classes not designed to be base classes or not designed to be used polymorphically should not declare virtual destructors.
 - Prevent Exceptions from leaving destructors
+- Never call virtual functions during construction or destruction 
+
+
