@@ -2,7 +2,7 @@
 ### AMD 
 The Asynchronous Module Definition .
 
-AMD描述了一种
+AMD描述了一种JS模块的加载规范。
 
 
 
