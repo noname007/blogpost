@@ -11,7 +11,7 @@ define function格式如下
 define(id?,dependencies?,factory)
 ```
 id中不允许文件扩展名的形式，如.js
-
+相对模块名解析
 
 ### CMD
 
