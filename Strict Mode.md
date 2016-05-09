@@ -17,5 +17,7 @@
 ### 部分函数无效
 - 出于安全的考虑，部分函数调用如fun.caller\fun.arguments在strict模式下无效
 
-### 为未来ES语法铺路 
+### 为未来ES语法铺路
+
+Strict 迁移 <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode/Transitioning_to_strict_mode> 
 
