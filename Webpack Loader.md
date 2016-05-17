@@ -3,4 +3,7 @@
 一个Loder满足一个node module的定义，并export 一个function。
 
 一般情况下，一个loader只会被传入一个参数2，那就是待处理的文件内容的字符串。
-一个同步式的loader只需要return一个value，而异步式的loader就可以传入更多的数据。如this.callback(err,values）函数。在loader运行期间发生的错误就会被抛入this.callback或者直接在同步式loader中抛出异常
+一个同步式的loader只需要return一个value，而异步式的loader就可以传入更多的数据。如this.callback(err,values）函数。在loader运行期间发生的错误就会被抛入this.callback或者直接在同步式loader中抛出异常。
+
+在复杂的例子中，当多个loader链式处理，只有最后的loader会获得resource file并且第一个loader只需要一个活着了两个参数，其他loader的返回将会把返回传给前一个loader。
+
