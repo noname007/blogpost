@@ -22,3 +22,12 @@
 - 除非JS脚本被声明为async，JS会阻塞DOM构建
 - 执行内联的脚本代码会阻塞DOM树构建，并同时延后初始化渲染
 - CSSOM构建会阻塞JS执行
+
+## 关键路径分析
+
+JS在默认状态下
+![](https://developers.google.com/web/fundamentals/performance/critical-rendering-path/images/analysis-dom-css-js.png)
+JS标记为async
+![](https://developers.google.com/web/fundamentals/performance/critical-rendering-path/images/analysis-dom-css-js-async.png)
+CSS的media改为print
+![](https://developers.google.com/web/fundamentals/performance/critical-rendering-path/images/analysis-dom-css-nb-js-async.png)
