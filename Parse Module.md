@@ -41,4 +41,12 @@ ExportEntries|        |所有导出点|
 	- LocalName 		导入之后使用的名称
 - ExportEntry
 	- ExportName     
+	- ModuleRequest
+	- ImportName
+	- LocalName 
 
+## ParseModule
+
+1. 分析文件，语法、句法错误
+2. 如果有错误就抛出，没错误就构建AST
+3. 
