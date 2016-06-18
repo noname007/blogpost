@@ -32,7 +32,7 @@ SDK最后更新时间|Android：2016年4月20日<br>iOS:2016年4月20日|
 
 U8SDK Android整体架构是采用U8server+U8SDK抽象SDK层+渠道SDK+游戏服务器组成，其中U8Server 
 
-U8SDK iOS版本支持
+U8SDK iOS版本支持使用的多配置xproject
 
 
 ## 
