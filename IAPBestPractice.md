@@ -21,4 +21,6 @@ IAP 最佳实践
 	
 6. Finish the transaction.
 
-  原因：transcation会一直在payment queue中	除非你去移除。SK会在每次应用启动后或者从后台恢复后，调用observer的paymentQueue:updatedTranscation直到transcation从中移除，否则你的用户会一直被询问
+  原因：transcation会一直在payment queue中	除非你去移除。SK会在每次应用启动后或者从后台恢复后，调用observer的paymentQueue:updatedTranscation直到transcation从中移除，否则你的用户会一直被询问是否购买
+  
+ 7. We 
