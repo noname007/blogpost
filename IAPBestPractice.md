@@ -23,4 +23,10 @@ IAP 最佳实践
 
   原因：transcation会一直在payment queue中	除非你去移除。SK会在每次应用启动后或者从后台恢复后，调用observer的paymentQueue:updatedTranscation直到transcation从中移除，否则你的用户会一直被询问是否购买
   
- 7. We 
+7. Test your implementation of In-App Purchase
+
+  原因：在你的应用提交审核前必须经过完整的测试，建议读以下两个:<https://developer.apple.com/library/ios/documentation/NetworkingInternet/Conceptual/StoreKitGuide/Chapters/DeliverProduct.html#//apple_ref/doc/uid/TP40008267-CH5-SW12>、<https://developer.apple.com/library/ios/technotes/tn2259/_index.html#//apple_ref/doc/uid/DTS40009578-CH1-FREQUENTLY_ASKED_QUESTIONS>
+  
+8. 以production URL来检验账单优先 
+  
+  原因：注意对21007进行再次连接验证，这个是在审核时可能会返回的状态，如果收到此code，那就需要去沙盒环境下再次验证
