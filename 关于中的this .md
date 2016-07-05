@@ -18,3 +18,4 @@ console.log((N.bind(b))()===this);
 
 ```
 
+正确答案是 true、true、false、false、 true
