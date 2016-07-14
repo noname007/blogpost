@@ -37,4 +37,3 @@
 - 明确的App架构
 - 变量清理和Controller之间共享变量
 - Mediator设计
-- 
