@@ -20,4 +20,6 @@ console.log((N.bind(b))()===this);
 
 正确答案是 true、true、false、false、 true
 
-this的指向跟句法作用域没关系，跟调用者有关系
+this的指向跟句法作用域没关系，跟调用者有关系。
+
+call-site call-stack
