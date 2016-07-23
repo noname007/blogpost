@@ -24,4 +24,5 @@
 
 ## Design Pattern Categorization
 
-- 
+- first
+- second
