@@ -32,5 +32,24 @@ cordova.exec(function(winParam) {},
              ["firstArgument", "secondArgument", 42, false]);
 ```
 
-## Native
+## Cordova Dependencies
+
+alter the engines in the package.json, include ```cordovaDependencies``` using the following structure 
+
+```
+engines:{
+	cordovaDependencies:{
+		PLUGIN_VERSION:{
+			DEPENDENCY:SEMVER_RANGE,
+			DEPENDENCY:SEMVER_RANGE
+		}
+	}
+}
+```
+
+
+
+## Native Interfaces
+
+
 
