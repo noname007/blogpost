@@ -51,5 +51,9 @@ engines:{
 
 ## Native Interfaces
 
+### Andorid Plugin
+
+Android plugins are based on Cordova-Android，which is built from an Android WebView with a native bridge. The native portion of an Android plugin consists of at least one Java class that extends the CordovaPlugin class and overrides one of its execute methods.
+
 
 
