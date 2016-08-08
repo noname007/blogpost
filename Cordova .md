@@ -55,5 +55,27 @@ engines:{
 
 Android plugins are based on Cordova-Android，which is built from an Android WebView with a native bridge. The native portion of an Android plugin consists of at least one Java class that extends the CordovaPlugin class and overrides one of its execute methods.
 
+#### threading 
+
+plugin's js code doesn't run in the main thread of the webview interface . It runs on the webcore thread ,as does the execute method . 
 
 
+```
+cordova.getActivity().runUiThread(new Runable(){
+	public void run(){
+	}
+})
+
+```
+
+```
+cordova.getThreadPool().execute(new Runnable() {
+  public void run() {
+            }
+        });
+```
+
+### iOS Plugin
+
+
+it‘s different 
