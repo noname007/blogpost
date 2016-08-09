@@ -78,4 +78,17 @@ cordova.getThreadPool().execute(new Runnable() {
 ### iOS Plugin
 
 
-it‘s different 
+it‘s different with android 。 plugin methods execute in the same thread as the main interface. If your plugin requires a greaat deal of processing or requires a blocking call. you should use a background thread.
+
+```
+-(void)myPluginMethod:(CDVInvokeUrlCommand*)command
+{
+	[self.commandDelegate runInBackground:^{
+		// some blocking commands
+		
+		CDVPluginResult* pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:payload];
+		//the sendpluginresult method is thread-safe
+		[self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
+	}];
+}
+```
