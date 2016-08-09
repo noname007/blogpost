@@ -17,4 +17,4 @@
 - author
 - keywords
 - license
-- asset
+- asset 这个是用来列出文件或者目录需要拷贝到cordova中的www目录下，当然这个元素可以内嵌入<platform>标签下，成为平台特定的资源
