@@ -16,4 +16,4 @@
   
   - 应用推送
 
-  	   webpack-dev-server + cordova-server + 固定IP
+  	   webpack-dev-server + cordova-server + static IP
