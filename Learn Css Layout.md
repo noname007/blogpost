@@ -9,11 +9,14 @@
   		- span
 	- none
  		- 与visibility存在区别
-- border-box 
- 
+- border-sizing
+	- border-box
+	- content-box
 - position
  - static
  - relative 
  - fixed
  - absolute
  	- a "positioned" element is one whose position is anything except static.
+
+ - float Float is intended for wrapping text around images
