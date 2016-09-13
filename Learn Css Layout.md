@@ -19,5 +19,11 @@
  - absolute
  	- a "positioned" element is one whose position is anything except static.
 
- - float Float is intended for wrapping text around images 
- - ss
+- float Float is intended for wrapping text around images 
+- clear for the property ‘float’
+- inline-block don't need clear 
+- float need clear
+- display:inline-block 
+- diplay;flexbox
+
+- flex 
