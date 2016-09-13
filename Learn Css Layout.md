@@ -26,4 +26,34 @@
 - display:inline-block 
 - diplay;flexbox
 
-- flex 
+- flex (display:flex ）
+ - flex-container
+  	 - flex-direction
+  		 - row
+  		 - row-reverse
+  		 - column
+  		 - column-reverse
+    - justify-content  for main axis
+    	- flex-start (default)
+		- flex-end
+		- center
+		- space-between
+		- space-around
+
+	![https://static.bocoup.com/blog/flex-pack.svg](https://static.bocoup.com/blog/flex-pack.svg)
+	
+	- align-items cross axis
+		- flex-start (default)
+		- flex-end
+		- center
+		- baseline
+		- stretch 
+
+	![](https://static.bocoup.com/blog/flex-align.svg)
+	- flex-wrap for more flex lines
+	- align-content aligning flex lines 
+
+	- flex-flow : = flex-direction + flex -wrap eg：column nowrap
+ - flex-items 
+ 	- flex 权重
+ 	
