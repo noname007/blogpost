@@ -4,4 +4,4 @@
 - Horizontal margins never collapse.
 - floated box do not collapse
 - absolutely positioned boxes do not collapse
-- 
+- relative的会
