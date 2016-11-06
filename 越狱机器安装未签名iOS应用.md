@@ -2,4 +2,4 @@
 
 关键工具 iResign 
 
-对包签名需要一个开发者账号
+对包签名需要一个开发者账号,一个wildId的provisionfile
