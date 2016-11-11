@@ -7,3 +7,16 @@
 - init 申请了cookie存储空间、url缓存空间
 - 注册了URL SCHEMA
 - 注册了低内存事件(清空 NSURLCACHE)
+
+
+## CDVViewController
+
+
+
+
+## CDVCommandQueue
+
+
+
+## CDVInvokedUrlCommand
+
