@@ -16,7 +16,7 @@
 
 ## CDVCommandQueue
 
-
+描述了如何执行JS侧发来的原生调用请求
 
 ## CDVInvokedUrlCommand
 
