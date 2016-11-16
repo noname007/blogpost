@@ -16,3 +16,10 @@ date|toDate|NSDate
 Array|toArray | NSArray|
 Object|toDictionary|NSDictionary|
 Object|toObject toObjectClass:|custom type
+
+
+## JsManagedValue
+
+"condtional retain"
+
+如果以下两个条件都不满足，那么managed value会将其value属性置空，并且释放其下的JSValue的对象
