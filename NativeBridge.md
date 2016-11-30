@@ -1,9 +1,17 @@
 # NativeBridge
 
-# NativeHost
 
-# NativeHandler
+## NativeHost
 
-# OutCommigMessage
+通信中介
 
-# InCommingMessage
+## NativeHandler
+
+通信载子
+
+## OutCommigMessage
+
+Native-> JS侧消息
+## InCommingMessage
+
+JS-> Native侧消息
