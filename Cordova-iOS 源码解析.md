@@ -20,3 +20,8 @@
 
 ## CDVInvokedUrlCommand
 
+
+## CDVCommandDelegateImpl
+
+## CDVURLProtocol
+用来注册解析schema请求的黑科技,苹果允许的官方的中间人攻击方式
