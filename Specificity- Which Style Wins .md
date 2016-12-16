@@ -19,3 +19,7 @@ tag inherites properties from a style with a large specificity  like #banner tho
 
 ## Tiebreaker
 Last wins ！
+
+## percent
+
+To make matters more confusing，top and bottom percentage values are also calculated based on the width of the containing element ， not its height。 So a 20% top margin is 20 percent of the width of the styled tags container.
