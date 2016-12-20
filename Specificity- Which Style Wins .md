@@ -25,3 +25,5 @@ Last wins ！
 To make matters more confusing，top and bottom percentage values are also calculated based on the width of the containing element ， not its height。 So a 20% top margin is 20 percent of the width of the styled tags container.
 
 If the value used in a CSS property is 0, then you don’t need to add a unit of measurement. For example, just type margin: 0; instead of margin: 0px; .
+
+margin and padding shorthand：The order in which you specify the four values is important,It must be top,right,bottom and left.
