@@ -21,7 +21,14 @@
  - Don't do nothing ! A test should make an assertion or use this.skip()
  - mocha test --reporter nyan
 ## chai
-- BDD expect or should ,TDD assert
+- BDD expect or should ,TDD asse=
 - Of the three style options, assert is the only one that is not chainable.
 
 ## sinon
+- Spy
+	- checking how many times a function was called
+	- checking what arguments were passed to a function
+- Stub
+	- Stubs can be used to replace problematic code
+	- Stubs can also be used to trigger different code paths. 
+	- Thirdly, stubs can be used to simplify testing asynchronous code.
