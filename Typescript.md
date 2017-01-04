@@ -53,3 +53,4 @@ function loggingIdentity<T extends Lengthwise>(arg: T): T {
 ```
 
 ## module
+ with ES6 Module,after typescript 1.5,namespace is simliar with "module"
