@@ -27,3 +27,33 @@ To make matters more confusing，top and bottom percentage values are also calcu
 If the value used in a CSS property is 0, then you don’t need to add a unit of measurement. For example, just type margin: 0; instead of margin: 0px; .
 
 margin and padding shorthand：The order in which you specify the four values is important,It must be top,right,bottom and left.
+
+
+## display setting
+
+two boxes: block and inline 
+different from tag block tag and inline tag\
+
+
+## dropshadow 
+Drop shadows can force browsers to do a lot of re-rendering and redrawing,Use drop shadows carefully ,and make sure you test the performance of pages with drop shadows in mobile devices, which lack the powerful CPUs of a desktop or laptop computer.
+
+## box-sizing 
+box-sizing：
+
+- content-box
+- padding-box
+- border-box
+
+## overflow
+
+- visible
+- scroll
+- auto
+- hidden
+
+## float
+When you float block-level elements, you should also set the width property for that element (in fact, CSS rules require setting the width for floated elements for all tags except images).
+
+float和position的差别在于
+
