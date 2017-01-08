@@ -55,5 +55,8 @@ box-sizing：
 ## float
 When you float block-level elements, you should also set the width property for that element (in fact, CSS rules require setting the width for floated elements for all tags except images).
 
-float和position的差别在于
+float和position的差别在于一个是布局，一个是定位
+
+
+## fixed and viewport
 
