@@ -62,6 +62,21 @@ float和position的差别在于一个是布局，一个是定位
 background-attachment
 
 ## Transforms
-- vendor prefix:
+- vendor prefix
+
+## Transition
+- which properties to animate
+- how long the animation takes
+- the type of animation used
+- an optional delay before the animation begins
+
+## CSS Layout Strategies
+- Start with your content
+- Mobile-first
+- padding marigin
+
+
+
+
 
 
